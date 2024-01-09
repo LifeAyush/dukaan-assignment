@@ -1,38 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --SideNav-Bg: #1e2640;
+  --Item-Bg: #353c53;
+  --Icon-Bg: rgba(255, 255, 255, 0.1);
+  --Text-Color-White: #fff;
+  --Icon-Color: #ffffff;
+  --Text-Color-Black: #1a181e;
+  --Text-Color-Grey: #4d4d4d;
+  --Main-Bg: #fafafa;
+  --Border-Color: #d9d9d9;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
   min-height: 100vh;
+  position: relative;
+}
+.App-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  background: var(--Main-Bg);
+  position: relative;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #d9d9d9;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--SideNav-Bg);
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
